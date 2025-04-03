@@ -1,11 +1,11 @@
-let result = document.querySelector(".result");
-let secondPerson = document.querySelector(".secondPerson");
-let firstPerson = document.querySelector(".firstPerson");
-let rock = document.querySelector(".rock");
-let paper = document.querySelector(".paper");
-let scissor = document.querySelector(".scissor");
+const result = document.querySelector(".result");
+const secondPerson = document.querySelector(".secondPerson");
+const firstPerson = document.querySelector(".firstPerson");
+const rock = document.querySelector(".rock");
+const paper = document.querySelector(".paper");
+const scissor = document.querySelector(".scissor");
 
-let rule = ["rock", "paper", "scissor"];
+const rule = ["rock", "paper", "scissor"];
 
 let person1, person2;
 function handleRock() {
@@ -29,17 +29,17 @@ function handleEvent(person1) {
   if (person1 == person2) {
     result.innerHTML = "game is drawn";
   } else if (person1 == "rock" && person2 == "scissor") {
-    result.innerHTML = "You wins game";
+    result.innerHTML = "You win game";
   } else if (person1 == "rock" && person2 == "paper") {
     result.innerHTML = "You lose game";
   } else if (person1 == "paper" && person2 == "scissor") {
     result.innerHTML = "you lose game";
   } else if (person1 == "paper" && person2 == "rock") {
-    result.innerHTML = "you wins game";
+    result.innerHTML = "you win game";
   } else if (person1 == "scissor" && person2 == "rock") {
     result.innerHTML = "you lose game";
   } else if (person1 == "scissor" && person2 == "paper") {
-    result.innerHTML = "you wins game";
+    result.innerHTML = "you win game";
   }
 }
 
