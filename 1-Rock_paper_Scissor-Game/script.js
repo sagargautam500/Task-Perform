@@ -7,7 +7,7 @@ const scissor = document.querySelector(".scissor");
 
 const rule = ["rock", "paper", "scissor"];
 
-let person1, person2;
+let person1, person2;   //person1="user choice",person2="computer choice"
 function handleRock() {
   person1 = rule[0];
   handleEvent(person1);
@@ -33,13 +33,13 @@ function handleEvent(person1) {
   } else if (person1 == "rock" && person2 == "paper") {
     result.innerHTML = "You lose game";
   } else if (person1 == "paper" && person2 == "scissor") {
-    result.innerHTML = "you lose game";
+    result.innerHTML = "You lose game";
   } else if (person1 == "paper" && person2 == "rock") {
-    result.innerHTML = "you win game";
+    result.innerHTML = "You win game";
   } else if (person1 == "scissor" && person2 == "rock") {
-    result.innerHTML = "you lose game";
+    result.innerHTML = "You lose game";
   } else if (person1 == "scissor" && person2 == "paper") {
-    result.innerHTML = "you win game";
+    result.innerHTML = "You win game";
   }
 }
 
