@@ -1,0 +1,40 @@
+body{
+  background-color: rgb(96, 201, 201);
+  text-align: center;
+}
+
+.img-container{
+  text-align: center;
+  margin: 2rem;
+} 
+.scissor:hover{
+  opacity: 50%;
+}
+.rock:hover{
+  opacity: 50%;
+}
+.paper:hover{
+  opacity: 50%;
+}
+
+.imgg{
+  border-radius: 50%;
+  width: 120px;
+  margin: 1rem;
+}
+
+.persons{
+  text-align: center;
+  margin: 2rem;
+}
+
+.result{
+  background-color: rgb(70, 116, 101);
+  text-align: center;
+  padding: 1rem;
+  margin: 2rem;
+  border: 2px solid black;
+  font-size: 3rem;
+  box-shadow: 2px 2px 2px 2px #464444;
+  
+}
