@@ -27,7 +27,7 @@ function handleEvent(person1) {
   secondPerson.innerHTML = `Computer Choose :${person2}`;
 
   if (person1 == person2) {
-    result.innerHTML = "game is drawn";
+    result.innerHTML = "Game is drawn";
   } else if (person1 == "rock" && person2 == "scissor") {
     result.innerHTML = "You win game";
   } else if (person1 == "rock" && person2 == "paper") {
