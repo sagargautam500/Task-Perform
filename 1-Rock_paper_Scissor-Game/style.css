@@ -1,12 +1,39 @@
 body {
-  background-color: rgb(96, 201, 201);
+  background-color: rgb(222, 235, 235);
   text-align: center;
+}
+.main-container {
+  display: flex;
+}
+
+.game-container {
+  width: 70%;
+  height: 100vh;
+  /* background-color: blanchedalmond; */
+}
+
+.result-container {
+  margin-left: 3rem;
+  min-width: 30%;
+  min-height: 50vh;
+  background-color: rgb(107, 196, 196);
+  box-shadow: 1px 1px 2px burlywood;
+  border-radius: 10px;
+}
+
+.scoreContainer {
+  min-height: 15vh;
 }
 
 .img-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 2rem;
+  height: 18rem;
+  gap: 2rem;
 }
+
 .scissor:hover {
   opacity: 50%;
 }
@@ -18,8 +45,10 @@ body {
 }
 
 .img {
-  border-radius: 50%;
-  width: 120px;
+  border-radius: 60%;
+  width: 14vw;
+  height: 25vh;
+  background-size: cover;
   margin: 1rem;
 }
 
@@ -28,12 +57,32 @@ body {
   margin: 2rem;
 }
 
-.result {
+.displayResult {
   background-color: rgb(70, 116, 101);
+  height: 11rem;
   text-align: center;
-  padding: 1rem;
   margin: 2rem;
   border: 2px solid black;
-  font-size: 3rem;
   box-shadow: 2px 2px 2px 2px #464444;
+}
+
+.result {
+  font-size: 2rem;
+}
+
+.tryAgainBtn {
+  background-color: rgb(70, 116, 101);
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  border-radius: 20px;
+}
+.tryAgainBtn:hover {
+  opacity: 50%;
+}
+.btnDisplay,
+.winImage,
+.loseImage,
+.mainImage {
+  display: none;
 }
